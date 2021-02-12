@@ -17,6 +17,7 @@ public class MagicSquareCost {
 		MagicSquareServiceImpl magicSqServiceImpl = new MagicSquareServiceImpl();
 		MagicSquareCostServiceImpl magicSqCostServiceImpl = new MagicSquareCostServiceImpl();
 		try {
+			System.out.println("Enter a matrix:");
 			Scanner in = new Scanner(System.in);
 			inputSquare = magicSqServiceImpl.createInputMatrix(in);
 		} catch (Exception e) {
