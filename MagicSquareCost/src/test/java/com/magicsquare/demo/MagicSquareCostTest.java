@@ -44,7 +44,7 @@ class MagicSquareCostTest {
 	public void testCorrectMinimalCost() {
 		int[][] arr = { { 4, 9, 2 }, { 3, 5, 7 }, { 8, 1, 9 } };
 		int cost = 3;
-		assertEquals(magicSqCostServiceImpl.findMinimalCost(possibleMagicSquaresList, arr), cost);
+		assertEquals(cost,magicSqCostServiceImpl.findMinimalCost(possibleMagicSquaresList, arr));
 	}
 
 	/*
@@ -54,7 +54,7 @@ class MagicSquareCostTest {
 	public void testInCorrectMinimalCost() {
 		int[][] arr = { { 8, 1, 6 }, { 3, 8, 7 }, { 4, 9, 2 } };
 		int cost = 7;
-		assertNotEquals(magicSqCostServiceImpl.findMinimalCost(possibleMagicSquaresList, arr), cost);
+		assertNotEquals(cost,magicSqCostServiceImpl.findMinimalCost(possibleMagicSquaresList, arr));
 	}
 
 	/*
